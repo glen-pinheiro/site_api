@@ -1,0 +1,8 @@
+site_api.jsonview:
+  path: 'jsonview/{siteapikey}/{node}'
+  defaults:
+    _controller: 'Drupal\site_api\Controller\JsonViewController::getPageJson'
+    _methods: 'GET'
+    _title: 'Json view of page.'
+  requirements:
+    _permission: 'access content'
