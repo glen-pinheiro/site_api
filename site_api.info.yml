@@ -1,0 +1,4 @@
+name: Site API
+description: Alter Site Info form.
+type: module
+core: 8.x

@@ -1,0 +1,8 @@
+services:
+  site_api.route_subscriber:
+    class: Drupal\site_api\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+
+  site_api.validate_api_key:
+    class: Drupal\site_api\Services\ValidateApiKey
